@@ -12,3 +12,5 @@ The column with the CG Bias is a useless leftover (aside possible for the last v
 The table can be imprted into excel and the C over G excess be plottes as a scatterplot.  (or use gnuplot, or R) 
 
 To run the script the sequence (with .fna extension) need to be in the same directory as the script.  
+
+perl GCskew.pl will start the script 
