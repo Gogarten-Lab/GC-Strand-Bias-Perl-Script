@@ -49,7 +49,7 @@ while (defined ($line=<IN>)){
 	foreach (@bases) {
 	   $number += 1;
 	   $base_hash{$_} += 1;#counts As,Gs and Cs and Ts
-#every 1000 nucleotides, print stuff to file
+#every 5 nucleotides, print stuff to file
 	   if ($number%5==0){
 	   $gcscew=($base_hash{C}-$base_hash{G});
 	   $atscew=($base_hash{A}-$base_hash{T});
