@@ -49,8 +49,9 @@ while (defined ($line=<IN>)){
 	foreach (@bases) {
 	   $number += 1;
 	   $base_hash{$_} += 1;#counts As,Gs and Cs and Ts
-#every 5 nucleotides, print stuff to file
-	   if ($number%5==0){
+#every 50 nucleotides, print stuff to file
+#depending on the sequence you analyze, this can be a large file.  You can change the 50 in the following line to a larger or smaller number.  For a genome 1000 workes fine, for an overall image, if you want to pinpoint a turning point in strand bias, use 5.
+	   if ($number%50==0){
 	   $gcscew=($base_hash{C}-$base_hash{G});
 	   $atscew=($base_hash{A}-$base_hash{T});
 	   $ketoexcess=($base_hash{G}+$base_hash{T})-($base_hash{A}+$base_hash{C});
