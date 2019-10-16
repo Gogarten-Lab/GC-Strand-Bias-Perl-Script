@@ -23,7 +23,7 @@ open (IN, "< $my_genome") or die "cannot open $my_genome:$!";
 
 open (OUT, ">my_table" ) or die "cannot open my_table" ;
 
-print OUT "number \tketoexcess\tCoverGscew\tAoverTscew\tGCbias\tbase_hash{A}\tbase_hash{T}\tbase_hash{G}\tbase_hash{C}\n";# if we want to use exel, we can print a header in the first line";
+print OUT "number \tketoexcess\tCoverGskew\tAoverTskew\tGCbias\tbase_hash{A}\tbase_hash{T}\tbase_hash{G}\tbase_hash{C}\n";# if we want to use exel, we can print a header in the first line";
 
 $header = <IN>;
 #reads first line of file, next command test for fasta commentline
